@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-using System.Numerics;
+using System;
 
 class HelloWorld
 {
@@ -17,6 +16,7 @@ class HelloWorld
 
     public static int Split_Matrix(int[,] matrix, int total, int counter)
     {
+        total = 0;
         int size_of_matrix = matrix.GetLength(0);
         int new_size = size_of_matrix - 1;
         if (size_of_matrix == 2)
@@ -64,7 +64,6 @@ class HelloWorld
                 counter += 1;
                 if (new_size == 2)
                 {
-
                     int definer = Two_Mansion(matrix, new_matrix, n, k);
                     total += definer;
                 }
@@ -72,11 +71,11 @@ class HelloWorld
                 {
                     if (n % 2 == 0)
                     {
-                        Split_Matrix(new_matrix, total, 2);
+                        total += Split_Matrix(new_matrix, total, 2)*matrix[0, n];
                     }
                     else
                     {
-                        Split_Matrix(new_matrix, total, 1);
+                        total +=Split_Matrix(new_matrix, total, 1) * matrix[0, n];
                     }
                 }
             }
@@ -85,8 +84,6 @@ class HelloWorld
     }
     public static int Two_Mansion(int[,] old_matrix, int[,] new_matrix, int n,int k)
     {
-        Console.Write($"{old_matrix[0, n]*k} Matrix: \n");
-        //Print(new_matrix);
         int definitor = Find_Definitor(new_matrix);
         definitor = old_matrix[0, n] * k * definitor;
         return definitor;
