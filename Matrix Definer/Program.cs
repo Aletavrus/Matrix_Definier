@@ -7,7 +7,6 @@ class HelloWorld
         string input = Console.ReadLine();
         int size = int.Parse(input);
         int[,] matrix = Create_Matrix(size, "");
-        Print(matrix);
         int total = 0;
         int counter = 0;
         int definer = Split_Matrix(matrix, total, counter);
@@ -17,6 +16,7 @@ class HelloWorld
     public static int Split_Matrix(int[,] matrix, int total, int counter)
     {
         total = 0;
+        counter = 0;
         int size_of_matrix = matrix.GetLength(0);
         int new_size = size_of_matrix - 1;
         if (size_of_matrix == 2)
@@ -40,13 +40,20 @@ class HelloWorld
                             }
                             else
                             {
-                                if (col == 0 || col == 1 & n != 0)
+                                if (col != 0)
                                 {
-                                    new_matrix[line - 1, col] = matrix[line, col];
+                                    if (col < new_size & new_matrix[line - 1, col-1] != 0 )
+                                    {
+                                        new_matrix[line - 1, col] = matrix[line, col];
+                                    }
+                                    else
+                                    {
+                                        new_matrix[line - 1, col - 1] = matrix[line, col];
+                                    }
                                 }
                                 else
                                 {
-                                    new_matrix[line - 1, col - 1] = matrix[line, col];
+                                    new_matrix[line-1, col] = matrix[line, col];
                                 }
                             }
                         }
@@ -61,6 +68,8 @@ class HelloWorld
                 {
                     k = -1;
                 }
+                Console.WriteLine($"Determinant: {matrix[0, n] * k}");
+                Print(new_matrix);
                 counter += 1;
                 if (new_size == 2)
                 {
@@ -75,14 +84,14 @@ class HelloWorld
                     }
                     else
                     {
-                        total +=Split_Matrix(new_matrix, total, 1) * matrix[0, n];
+                        total += Split_Matrix(new_matrix, total, 1) * matrix[0, n];
                     }
                 }
             }
         }
         return total;
     }
-    public static int Two_Mansion(int[,] old_matrix, int[,] new_matrix, int n,int k)
+    public static int Two_Mansion(int[,] old_matrix, int[,] new_matrix, int n, int k)
     {
         int definitor = Find_Definitor(new_matrix);
         definitor = old_matrix[0, n] * k * definitor;
