@@ -1,0 +1,15 @@
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\bin\Debug\net8.0\Matrix Definer.exe
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\bin\Debug\net8.0\Matrix Definer.deps.json
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\bin\Debug\net8.0\Matrix Definer.runtimeconfig.json
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\bin\Debug\net8.0\Matrix Definer.dll
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\bin\Debug\net8.0\Matrix Definer.pdb
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.AssemblyInfoInputs.cache
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.AssemblyInfo.cs
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.csproj.CoreCompileInputs.cache
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.sourcelink.json
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.dll
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\refint\Matrix Definer.dll
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.pdb
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\Matrix Definer.genruntimeconfig.cache
+D:\Git Projects\Matrix Definer\Matrix_Definier\Matrix Definer\obj\Debug\net8.0\ref\Matrix Definer.dll
